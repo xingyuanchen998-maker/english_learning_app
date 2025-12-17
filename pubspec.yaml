@@ -1,0 +1,23 @@
+name: english_learning_app
+description: 私人用英文学习助手（翻译+跟读+词汇练习）
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_tts: ^3.6.0          # 语音合成（播放单词发音）
+  speech_to_text: ^6.6.0       # 语音识别（跟读评分）
+  http: ^1.1.0                 # 网络请求（翻译接口调用）
+  crypto: ^3.0.3               # 加密（翻译API签名）
+  shared_preferences: ^2.2.2   # 本地存储（记录学习数据）
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
